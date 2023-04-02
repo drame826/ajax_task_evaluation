@@ -1,1 +1,5 @@
-$("#favorite-<%= @favorite.blog.id %>").html("<%= j(render partial: 'blogs/favorite', locals: { blog: @favorite.blog }) %>");
+
+
+
+
+$("#this_favorite_<%= @favorite.id %>").replaceWith("<%= j(render 'favorites/edit', { blog: @blog,favorite: @favorite }) %>");
