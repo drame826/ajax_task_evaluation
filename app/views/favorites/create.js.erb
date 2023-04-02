@@ -1,1 +1,1 @@
-document.getElementById('favorite-<%= @blog.id %>').innerHTML = "<%= j(render partial: 'blogs/favorite', locals: { blog: @blog }) %>"
+$("#favorite-<%= @favorite.blog.id %>").html("<%= j(render partial: 'blogs/favorite', locals: { blog: @favorite.blog }) %>");
